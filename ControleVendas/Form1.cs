@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ControleVendas
 {
-    public partial class Form1 : Form
+    public partial class frmInicial : Form
     {
-        public Form1()
+        public frmInicial()
         {
             InitializeComponent();
+            lblCabeçalho.Text = 
+                " Controle de Vendas - Versão 0.0.1\n" +
+                " Desenvolvido por:\n DesbravaLink Tecnologia e Inovação\n" +
+                " Versão BetaTest\n" +
+                " Desenvolvido como Trabalho Escolar" +
+                " Kleyson Gomes and José Dênis";
+            txtNumeroVenda.Text = "0.0.1-0001";
         }
     }
 }

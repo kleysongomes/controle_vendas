@@ -1,0 +1,10 @@
+C:\Repositorios\controle_vendas\ControleVendas\bin\Debug\ControleVendas.exe.config
+C:\Repositorios\controle_vendas\ControleVendas\bin\Debug\ControleVendas.exe
+C:\Repositorios\controle_vendas\ControleVendas\bin\Debug\ControleVendas.pdb
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csprojAssemblyReference.cache
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.frmInicial.resources
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.Properties.Resources.resources
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csproj.GenerateResource.cache
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csproj.CoreCompileInputs.cache
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.exe
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.pdb
