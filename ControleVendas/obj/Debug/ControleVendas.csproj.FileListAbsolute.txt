@@ -8,3 +8,14 @@ C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csproj.G
 C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csproj.CoreCompileInputs.cache
 C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.exe
 C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.pdb
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csprojAssemblyReference.cache
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.exe
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.pdb
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\bin\Debug\ControleVendas.exe.config
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\bin\Debug\ControleVendas.exe
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\bin\Debug\ControleVendas.pdb
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.Properties.Resources.resources
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csproj.GenerateResource.cache
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csproj.CoreCompileInputs.cache
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.Form2.resources
+G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.frmPrincipal.resources
