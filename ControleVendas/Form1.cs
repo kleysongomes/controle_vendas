@@ -16,8 +16,9 @@ namespace ControleVendas
         public frmPrincipal()
         {
             InitializeComponent();
+            string versao = "0.0.2";
             lblCabeçalho.Text = 
-                " Controle de Vendas - Versão 0.0.1\n" +
+                " Controle de Vendas - " + versao + "\n"
                 " Desenvolvido por:\n DesbravaLink Tecnologia e Inovação\n" +
                 " Versão BetaTeste\n" +
                 " Desenvolvido como Trabalho Escolar" +
