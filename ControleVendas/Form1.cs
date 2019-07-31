@@ -12,10 +12,12 @@ namespace ControleVendas
 {
     public partial class frmPrincipal : Form
     {
+        Form2 frmListProdutos;
         public frmPrincipal()
         {
             InitializeComponent();
-            string versao = "0.0.2";
+            
+            string versao = "0.0.3";
             lblCabeçalho.Text = 
                 " Controle de Vendas - " + versao + "\n" +
                 " Desenvolvido por:\n DesbravaLink Tecnologia e Inovação\n" +
@@ -24,17 +26,22 @@ namespace ControleVendas
                 " Kleyson Gomes and José Dênis";
             txtNumeroVenda.Text = "0.0.1-0001";
         }
-
-        private void BtnAdcionarProduto_Click(object sender, EventArgs e)
+        public frmPrincipal(Form2 frmProdutos)
         {
+            frmListProdutos = frmProdutos;
+        }
+            private void BtnAdcionarProduto_Click(object sender, EventArgs e)
+        {
+            //Abre formListProdutos
             Form2 frmProdutos = new Form2(this);
             frmProdutos.Show();
-            //Abre formListProdutos
         }
 
         private void BtnRemoverProduto_Click(object sender, EventArgs e)
         {
             //Remove o produto selecionado da lbxCompra
+            this.lbxQuantidade1.Items.RemoveAt(lbxCompra.SelectedIndex);
+            this.lbxValor1.Items.RemoveAt(lbxCompra.SelectedIndex);
             this.lbxCompra.Items.Remove(lbxCompra.SelectedItem.ToString());
         }
 
@@ -46,6 +53,11 @@ namespace ControleVendas
         private void BtnGerarVenda_Click(object sender, EventArgs e)
         {
             //Abre formRelatorioCompra
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

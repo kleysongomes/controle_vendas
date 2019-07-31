@@ -42,7 +42,7 @@
             this.btnRemoverProduto = new System.Windows.Forms.Button();
             this.lblFormadePagto = new System.Windows.Forms.Label();
             this.cbxFormadePagto = new System.Windows.Forms.ComboBox();
-            this.lblQuantidade = new System.Windows.Forms.Label();
+            this.lblValor1 = new System.Windows.Forms.Label();
             this.txtFrete1 = new System.Windows.Forms.TextBox();
             this.lblFrete1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,7 +51,9 @@
             this.btnCalcularFrete = new System.Windows.Forms.Button();
             this.lblSubTotal1 = new System.Windows.Forms.Label();
             this.txtSubTotal1 = new System.Windows.Forms.TextBox();
-            this.lbxQuantProduto = new System.Windows.Forms.ListBox();
+            this.lbxValor1 = new System.Windows.Forms.ListBox();
+            this.lbxQuantidade1 = new System.Windows.Forms.ListBox();
+            this.lblQuantidade1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblCabeçalho
@@ -156,9 +158,9 @@
             this.lbxCompra.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.lbxCompra.FormattingEnabled = true;
             this.lbxCompra.ItemHeight = 14;
-            this.lbxCompra.Location = new System.Drawing.Point(18, 165);
+            this.lbxCompra.Location = new System.Drawing.Point(12, 145);
             this.lbxCompra.Name = "lbxCompra";
-            this.lbxCompra.Size = new System.Drawing.Size(523, 256);
+            this.lbxCompra.Size = new System.Drawing.Size(455, 256);
             this.lbxCompra.TabIndex = 10;
             // 
             // btnAdcionarProduto
@@ -166,7 +168,7 @@
             this.btnAdcionarProduto.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAdcionarProduto.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnAdcionarProduto.ForeColor = System.Drawing.Color.White;
-            this.btnAdcionarProduto.Location = new System.Drawing.Point(18, 118);
+            this.btnAdcionarProduto.Location = new System.Drawing.Point(12, 407);
             this.btnAdcionarProduto.Name = "btnAdcionarProduto";
             this.btnAdcionarProduto.Size = new System.Drawing.Size(170, 31);
             this.btnAdcionarProduto.TabIndex = 11;
@@ -179,7 +181,7 @@
             this.btnRemoverProduto.BackColor = System.Drawing.Color.DarkRed;
             this.btnRemoverProduto.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnRemoverProduto.ForeColor = System.Drawing.Color.White;
-            this.btnRemoverProduto.Location = new System.Drawing.Point(195, 118);
+            this.btnRemoverProduto.Location = new System.Drawing.Point(227, 407);
             this.btnRemoverProduto.Name = "btnRemoverProduto";
             this.btnRemoverProduto.Size = new System.Drawing.Size(170, 31);
             this.btnRemoverProduto.TabIndex = 12;
@@ -191,7 +193,7 @@
             // 
             this.lblFormadePagto.AutoSize = true;
             this.lblFormadePagto.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.lblFormadePagto.Location = new System.Drawing.Point(632, 135);
+            this.lblFormadePagto.Location = new System.Drawing.Point(638, 206);
             this.lblFormadePagto.Name = "lblFormadePagto";
             this.lblFormadePagto.Size = new System.Drawing.Size(151, 14);
             this.lblFormadePagto.TabIndex = 13;
@@ -206,27 +208,27 @@
             "DINHEIRO",
             "CARTAO",
             "BOLETO"});
-            this.cbxFormadePagto.Location = new System.Drawing.Point(635, 165);
+            this.cbxFormadePagto.Location = new System.Drawing.Point(641, 229);
             this.cbxFormadePagto.Name = "cbxFormadePagto";
             this.cbxFormadePagto.Size = new System.Drawing.Size(147, 22);
             this.cbxFormadePagto.TabIndex = 14;
             // 
-            // lblQuantidade
+            // lblValor1
             // 
-            this.lblQuantidade.AutoSize = true;
-            this.lblQuantidade.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.lblQuantidade.Location = new System.Drawing.Point(565, 135);
-            this.lblQuantidade.Name = "lblQuantidade";
-            this.lblQuantidade.Size = new System.Drawing.Size(31, 14);
-            this.lblQuantidade.TabIndex = 16;
-            this.lblQuantidade.Text = "QTD";
+            this.lblValor1.AutoSize = true;
+            this.lblValor1.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lblValor1.Location = new System.Drawing.Point(547, 124);
+            this.lblValor1.Name = "lblValor1";
+            this.lblValor1.Size = new System.Drawing.Size(87, 14);
+            this.lblValor1.TabIndex = 16;
+            this.lblValor1.Text = "VALOR (R$)";
             // 
             // txtFrete1
             // 
             this.txtFrete1.Enabled = false;
             this.txtFrete1.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.txtFrete1.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtFrete1.Location = new System.Drawing.Point(637, 282);
+            this.txtFrete1.Location = new System.Drawing.Point(641, 318);
             this.txtFrete1.MaxLength = 50;
             this.txtFrete1.Name = "txtFrete1";
             this.txtFrete1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -238,7 +240,7 @@
             // 
             this.lblFrete1.AutoSize = true;
             this.lblFrete1.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.lblFrete1.Location = new System.Drawing.Point(663, 256);
+            this.lblFrete1.Location = new System.Drawing.Point(668, 301);
             this.lblFrete1.Name = "lblFrete1";
             this.lblFrete1.Size = new System.Drawing.Size(95, 14);
             this.lblFrete1.TabIndex = 19;
@@ -248,7 +250,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label2.Location = new System.Drawing.Point(653, 316);
+            this.label2.Location = new System.Drawing.Point(663, 344);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 14);
             this.label2.TabIndex = 21;
@@ -259,7 +261,7 @@
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.textBox2.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox2.Location = new System.Drawing.Point(637, 345);
+            this.textBox2.Location = new System.Drawing.Point(641, 361);
             this.textBox2.MaxLength = 50;
             this.textBox2.Name = "textBox2";
             this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -272,7 +274,7 @@
             this.btnGerarVenda.BackColor = System.Drawing.Color.ForestGreen;
             this.btnGerarVenda.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnGerarVenda.ForeColor = System.Drawing.Color.White;
-            this.btnGerarVenda.Location = new System.Drawing.Point(635, 390);
+            this.btnGerarVenda.Location = new System.Drawing.Point(641, 407);
             this.btnGerarVenda.Name = "btnGerarVenda";
             this.btnGerarVenda.Size = new System.Drawing.Size(153, 31);
             this.btnGerarVenda.TabIndex = 22;
@@ -285,7 +287,7 @@
             this.btnCalcularFrete.BackColor = System.Drawing.Color.DarkBlue;
             this.btnCalcularFrete.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.btnCalcularFrete.ForeColor = System.Drawing.Color.White;
-            this.btnCalcularFrete.Location = new System.Drawing.Point(371, 118);
+            this.btnCalcularFrete.Location = new System.Drawing.Point(437, 407);
             this.btnCalcularFrete.Name = "btnCalcularFrete";
             this.btnCalcularFrete.Size = new System.Drawing.Size(170, 31);
             this.btnCalcularFrete.TabIndex = 23;
@@ -297,7 +299,7 @@
             // 
             this.lblSubTotal1.AutoSize = true;
             this.lblSubTotal1.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.lblSubTotal1.Location = new System.Drawing.Point(668, 198);
+            this.lblSubTotal1.Location = new System.Drawing.Point(675, 258);
             this.lblSubTotal1.Name = "lblSubTotal1";
             this.lblSubTotal1.Size = new System.Drawing.Size(71, 14);
             this.lblSubTotal1.TabIndex = 25;
@@ -308,7 +310,7 @@
             this.txtSubTotal1.Enabled = false;
             this.txtSubTotal1.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.txtSubTotal1.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtSubTotal1.Location = new System.Drawing.Point(637, 226);
+            this.txtSubTotal1.Location = new System.Drawing.Point(641, 275);
             this.txtSubTotal1.MaxLength = 50;
             this.txtSubTotal1.Name = "txtSubTotal1";
             this.txtSubTotal1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -316,16 +318,37 @@
             this.txtSubTotal1.TabIndex = 24;
             this.txtSubTotal1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // lbxQuantProduto
+            // lbxValor1
             // 
-            this.lbxQuantProduto.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lbxQuantProduto.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.lbxQuantProduto.FormattingEnabled = true;
-            this.lbxQuantProduto.ItemHeight = 14;
-            this.lbxQuantProduto.Location = new System.Drawing.Point(563, 165);
-            this.lbxQuantProduto.Name = "lbxQuantProduto";
-            this.lbxQuantProduto.Size = new System.Drawing.Size(42, 256);
-            this.lbxQuantProduto.TabIndex = 26;
+            this.lbxValor1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbxValor1.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lbxValor1.FormattingEnabled = true;
+            this.lbxValor1.ItemHeight = 14;
+            this.lbxValor1.Location = new System.Drawing.Point(556, 145);
+            this.lbxValor1.Name = "lbxValor1";
+            this.lbxValor1.Size = new System.Drawing.Size(66, 256);
+            this.lbxValor1.TabIndex = 26;
+            // 
+            // lbxQuantidade1
+            // 
+            this.lbxQuantidade1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lbxQuantidade1.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lbxQuantidade1.FormattingEnabled = true;
+            this.lbxQuantidade1.ItemHeight = 14;
+            this.lbxQuantidade1.Location = new System.Drawing.Point(494, 145);
+            this.lbxQuantidade1.Name = "lbxQuantidade1";
+            this.lbxQuantidade1.Size = new System.Drawing.Size(36, 256);
+            this.lbxQuantidade1.TabIndex = 27;
+            // 
+            // lblQuantidade1
+            // 
+            this.lblQuantidade1.AutoSize = true;
+            this.lblQuantidade1.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lblQuantidade1.Location = new System.Drawing.Point(497, 124);
+            this.lblQuantidade1.Name = "lblQuantidade1";
+            this.lblQuantidade1.Size = new System.Drawing.Size(31, 14);
+            this.lblQuantidade1.TabIndex = 28;
+            this.lblQuantidade1.Text = "QTD";
             // 
             // frmPrincipal
             // 
@@ -333,7 +356,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbxQuantProduto);
+            this.Controls.Add(this.lblQuantidade1);
+            this.Controls.Add(this.lbxQuantidade1);
+            this.Controls.Add(this.lbxValor1);
             this.Controls.Add(this.lblSubTotal1);
             this.Controls.Add(this.txtSubTotal1);
             this.Controls.Add(this.btnCalcularFrete);
@@ -342,7 +367,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblFrete1);
             this.Controls.Add(this.txtFrete1);
-            this.Controls.Add(this.lblQuantidade);
+            this.Controls.Add(this.lblValor1);
             this.Controls.Add(this.cbxFormadePagto);
             this.Controls.Add(this.lblFormadePagto);
             this.Controls.Add(this.btnRemoverProduto);
@@ -362,14 +387,13 @@
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Controle de Vendas | Versão 0.0.1";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblCabeçalho;
         private System.Windows.Forms.TextBox txtIDVendedor;
         private System.Windows.Forms.Label lblIDVendedor;
         private System.Windows.Forms.Label lblNomeVendedor;
@@ -381,18 +405,21 @@
         private System.Windows.Forms.Button btnAdcionarProduto;
         private System.Windows.Forms.Button btnRemoverProduto;
         private System.Windows.Forms.Label lblFormadePagto;
-        private System.Windows.Forms.ComboBox cbxFormadePagto;
-        private System.Windows.Forms.Label lblQuantidade;
-        private System.Windows.Forms.TextBox txtFrete1;
+        private System.Windows.Forms.Label lblValor1;
         private System.Windows.Forms.Label lblFrete1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnGerarVenda;
         private System.Windows.Forms.Button btnCalcularFrete;
         private System.Windows.Forms.Label lblSubTotal1;
-        private System.Windows.Forms.TextBox txtSubTotal1;
         public System.Windows.Forms.ListBox lbxCompra;
-        public System.Windows.Forms.ListBox lbxQuantProduto;
+        public System.Windows.Forms.ListBox lbxValor1;
+        public System.Windows.Forms.Label lblCabeçalho;
+        public System.Windows.Forms.ListBox lbxQuantidade1;
+        private System.Windows.Forms.Label lblQuantidade1;
+        public System.Windows.Forms.ComboBox cbxFormadePagto;
+        public System.Windows.Forms.TextBox txtFrete1;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtSubTotal1;
     }
 }
 
