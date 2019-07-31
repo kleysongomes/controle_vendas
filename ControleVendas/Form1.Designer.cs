@@ -386,7 +386,7 @@
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Controle de Vendas | Versão 0.0.1";
+            this.Text = "Controle de Vendas";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
