@@ -12,13 +12,12 @@ namespace ControleVendas
 {
     public partial class frmPrincipal : Form
     {
-        Form2 frmProdutos = new Form2();
         public frmPrincipal()
         {
             InitializeComponent();
             string versao = "0.0.2";
             lblCabeçalho.Text = 
-                " Controle de Vendas - " + versao + "\n"
+                " Controle de Vendas - " + versao + "\n" +
                 " Desenvolvido por:\n DesbravaLink Tecnologia e Inovação\n" +
                 " Versão BetaTeste\n" +
                 " Desenvolvido como Trabalho Escolar" +
@@ -28,7 +27,7 @@ namespace ControleVendas
 
         private void BtnAdcionarProduto_Click(object sender, EventArgs e)
         {
-            //Form2 frmProdutos = new Form2();
+            Form2 frmProdutos = new Form2(this);
             frmProdutos.Show();
             //Abre formListProdutos
         }
@@ -36,6 +35,7 @@ namespace ControleVendas
         private void BtnRemoverProduto_Click(object sender, EventArgs e)
         {
             //Remove o produto selecionado da lbxCompra
+            this.lbxCompra.Items.Remove(lbxCompra.SelectedItem.ToString());
         }
 
         private void BtnCalcularFrete_Click(object sender, EventArgs e)

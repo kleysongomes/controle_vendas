@@ -2,7 +2,6 @@ C:\Repositorios\controle_vendas\ControleVendas\bin\Debug\ControleVendas.exe.conf
 C:\Repositorios\controle_vendas\ControleVendas\bin\Debug\ControleVendas.exe
 C:\Repositorios\controle_vendas\ControleVendas\bin\Debug\ControleVendas.pdb
 C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csprojAssemblyReference.cache
-C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.frmInicial.resources
 C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.Properties.Resources.resources
 C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csproj.GenerateResource.cache
 C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csproj.CoreCompileInputs.cache
@@ -19,3 +18,5 @@ G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVenda
 G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.csproj.CoreCompileInputs.cache
 G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.Form2.resources
 G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.frmPrincipal.resources
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.frmPrincipal.resources
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.Form2.resources
