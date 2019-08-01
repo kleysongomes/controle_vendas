@@ -1,0 +1,16 @@
+Arquivo de log da venda 0.1.2.20190801091718
+
+Produto: COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUX
+Quantidade: 1
+Valor: 900
+Produto: HD 1TB PORTATIL USB 3.0 EXPANSION STEA1000400
+Quantidade: 3
+Valor: 270
+
+Subtotal: R$1710
+Frete: R$171
+Valot Pago: R$1881
+Forma de Pagamento: DINHEIRO
+
+Vendedor: System.Windows.Forms.TextBox, Text: kLEYSON GOMES
+ID do Vendedor: System.Windows.Forms.TextBox, Text: 001

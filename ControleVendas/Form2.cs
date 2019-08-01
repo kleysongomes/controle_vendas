@@ -12,10 +12,14 @@ namespace ControleVendas
 {
     public partial class Form2 : Form
     {
+        //declaração dos Forms
         frmPrincipal frm1;
-
+        //#
+        //Variaves Globais
         double dblSubtotal1;
-
+        double dblTotalPagar2;
+        //#
+        //Arrays(Item, Quantidade, Valor)
         string[] ArrayItem = 
             {
                 "COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUX",
@@ -54,7 +58,7 @@ namespace ControleVendas
                 50.00, 500.00, 900.00,950.00,60.00,25.00,15.00,23.00,100.00,125.00,
                 70.00,30.00,250.00,15.00,20.00
             };
-
+        //#
         public Form2()
         {
             InitializeComponent();
@@ -62,41 +66,48 @@ namespace ControleVendas
         }
         public Form2(frmPrincipal frmTela)
         {
+            //Recebendo o Form1 como parametro
             InitializeComponent();
             frm1 = frmTela;
             lblCabeçalho2.Text = frm1.lblCabeçalho.Text;
+            //#
         }
-
         private void Form2_Load(object sender, EventArgs e)
         {
+            //For para percorrer o arrai item e pegar o index dele para exibição de Quantitade e Valor equivalentes na posição do Array
             for (int linha = 0; linha < 23; linha++)
             {
                 lbxProdutos.Items.Add(ArrayItem[linha]);
             }
+            //#
         }
-
         private void BtnEnviarItem_Click(object sender, EventArgs e)
         {
-            // lbxCompra.SelectedItems.Add(lbxProdutos.SelectedItems.ToString());
+            //Pasando o Item selecionado no Form2 para o Form1
             frm1.lbxCompra.Items.Add(lbxProdutos.SelectedItem.ToString());
             frm1.lbxQuantidade1.Items.Add(txtQuantidade2.Text.ToString());
             frm1.lbxValor1.Items.Add(txtValor2.Text.ToString());
-
+            //#
+            //Calculo do SubTotal
             dblSubtotal1 = dblSubtotal1 + Convert.ToDouble(txtQuantidade2.Text) * Convert.ToDouble(ArrayValor[lbxProdutos.SelectedIndex]);
             frm1.txtSubTotal1.Text = Convert.ToString(dblSubtotal1);
-
+            //#
+            //Calculando o SubTotal + Frete = Valor Total a pagar e enviando para o form1
+            dblTotalPagar2 = Convert.ToDouble(frm1.txtSubTotal1.Text) + Convert.ToDouble(frm1.txtFrete1.Text);
+            frm1.txtTotalPagar.Text =  Convert.ToString(dblTotalPagar2);
+            //#
+            //Limpando os dados das Texbox coletado no inicio da instrução
             txtQtdEstoque.Clear();
             txtValor2.Clear();
             txtQuantidade2.Clear();
-
-
+            //#
         }
-
-
         private void LbxProdutos_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Passando os dados dos Arrays Valor e Quantidade para as Texbox Valor2 e QtdEstoque coletado por meio do index obtido no for a cima
             txtQtdEstoque.Text = ArrayQuantidade[lbxProdutos.SelectedIndex].ToString();
             txtValor2.Text = ArrayValor[lbxProdutos.SelectedIndex].ToString();
+            //#
         }
     }
 }

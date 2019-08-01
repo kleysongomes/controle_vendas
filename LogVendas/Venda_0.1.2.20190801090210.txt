@@ -1,0 +1,12 @@
+Arquivo de log da venda 0.1.2.20190801090210
+
+Produto: COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUX
+Quantidade: 1
+Valor: 900
+Produto: SOFTWARE WINDOWS 10 HOME 64BITS (OEM)
+Quantidade: 5
+Valor: 500
+Subtotal: R$3400
+Frete: R$340
+Valot Pago: R$3740
+Forma de Pagamento: DINHEIRO

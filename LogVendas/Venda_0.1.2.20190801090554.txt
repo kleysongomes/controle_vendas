@@ -1,0 +1,13 @@
+Arquivo de log da venda 0.1.2.20190801090554
+
+Produto: COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUX
+Quantidade: 2
+Valor: 900
+Produto: PEN DRIVE 8GB USB 2.0 MINI PRETO PD770
+Quantidade: 4
+Valor: 14
+
+Subtotal: R$1856
+Frete: R$185,6
+Valot Pago: R$2041,6
+Forma de Pagamento: DINHEIRO

@@ -46,7 +46,7 @@
             this.txtFrete1 = new System.Windows.Forms.TextBox();
             this.lblFrete1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTotalPagar = new System.Windows.Forms.TextBox();
             this.btnGerarVenda = new System.Windows.Forms.Button();
             this.btnCalcularFrete = new System.Windows.Forms.Button();
             this.lblSubTotal1 = new System.Windows.Forms.Label();
@@ -234,6 +234,7 @@
             this.txtFrete1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtFrete1.Size = new System.Drawing.Size(147, 23);
             this.txtFrete1.TabIndex = 18;
+            this.txtFrete1.Text = "0";
             this.txtFrete1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblFrete1
@@ -256,18 +257,18 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "TOTAL A PAGAR";
             // 
-            // textBox2
+            // txtTotalPagar
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.textBox2.ForeColor = System.Drawing.Color.DarkRed;
-            this.textBox2.Location = new System.Drawing.Point(641, 361);
-            this.textBox2.MaxLength = 50;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox2.Size = new System.Drawing.Size(147, 23);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTotalPagar.Enabled = false;
+            this.txtTotalPagar.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.txtTotalPagar.ForeColor = System.Drawing.Color.DarkRed;
+            this.txtTotalPagar.Location = new System.Drawing.Point(641, 361);
+            this.txtTotalPagar.MaxLength = 50;
+            this.txtTotalPagar.Name = "txtTotalPagar";
+            this.txtTotalPagar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtTotalPagar.Size = new System.Drawing.Size(147, 23);
+            this.txtTotalPagar.TabIndex = 20;
+            this.txtTotalPagar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnGerarVenda
             // 
@@ -316,6 +317,7 @@
             this.txtSubTotal1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtSubTotal1.Size = new System.Drawing.Size(147, 23);
             this.txtSubTotal1.TabIndex = 24;
+            this.txtSubTotal1.Text = "0";
             this.txtSubTotal1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lbxValor1
@@ -364,7 +366,7 @@
             this.Controls.Add(this.btnCalcularFrete);
             this.Controls.Add(this.btnGerarVenda);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtTotalPagar);
             this.Controls.Add(this.lblFrete1);
             this.Controls.Add(this.txtFrete1);
             this.Controls.Add(this.lblValor1);
@@ -394,10 +396,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtIDVendedor;
         private System.Windows.Forms.Label lblIDVendedor;
         private System.Windows.Forms.Label lblNomeVendedor;
-        private System.Windows.Forms.TextBox txtNomeVendedor;
         private System.Windows.Forms.TextBox txtNumeroVenda;
         private System.Windows.Forms.Label lblNumeroVenda;
         private System.Windows.Forms.Label lblSeparador;
@@ -418,8 +418,10 @@
         private System.Windows.Forms.Label lblQuantidade1;
         public System.Windows.Forms.ComboBox cbxFormadePagto;
         public System.Windows.Forms.TextBox txtFrete1;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtTotalPagar;
         public System.Windows.Forms.TextBox txtSubTotal1;
+        public System.Windows.Forms.TextBox txtIDVendedor;
+        public System.Windows.Forms.TextBox txtNomeVendedor;
     }
 }
 
