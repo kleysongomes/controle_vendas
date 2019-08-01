@@ -1,1 +1,9 @@
+#Este arquivo serve para descrever pastas, arquivos a serem ignorados no push
+#----------------------------------------------------------------------------#
+#Pastas para serem ignorados:
 LogVendas/
+.vs/
+#----------------------------------------------------------------------------#
+#Arquivos para serem ignorados:
+
+#----------------------------------------------------------------------------#
