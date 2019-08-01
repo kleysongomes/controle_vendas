@@ -1,4 +1,0 @@
-Dados da Venda 
-Produtos: System.Windows.Forms.TextBox, Text: 
-1336
-

@@ -1,2 +1,0 @@
-Dados da Venda 
-Produtos: System.Windows.Forms.ListBox+ObjectCollection

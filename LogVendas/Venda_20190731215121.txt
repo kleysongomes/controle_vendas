@@ -1,4 +1,0 @@
-Dados da Venda 
-Produtos: COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUX
-System.Windows.Forms.TextBox, Text: 1124
-System.Windows.Forms.TextBox, Text: 1124

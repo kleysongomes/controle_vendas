@@ -1,5 +1,0 @@
-Dados da Venda 
-Produtos: COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUX
-Subtotal: 900
-Frete: 90
-Valot Pago: System.Windows.Forms.TextBox, Text: 990

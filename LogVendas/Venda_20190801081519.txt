@@ -1,6 +1,0 @@
-Dados da Venda 
-Produtos: COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUX
-Subtotal: R$900
-Frete: R$90
-Valot Pago: R$990
-Forma de Pagamento: DINHEIRO

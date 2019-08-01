@@ -1,8 +1,0 @@
-Arquivo de log da venda 0.1.2.20190801085304
-Produtos:
-COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUXProdutos:
-COMPUTADOR V520S I3-7100/4GB/500GB/SEM SISTEMA
-Subtotal: R$2600
-Frete: R$260
-Valot Pago: R$2860
-Forma de Pagamento: 

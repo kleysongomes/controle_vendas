@@ -1,4 +1,0 @@
-Dados da Venda 
-Produtos: SSD 240GB SATA3 SA400S37
-System.Windows.Forms.TextBox, Text: 270
-System.Windows.Forms.TextBox, Text: 270
