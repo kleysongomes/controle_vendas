@@ -13,6 +13,10 @@ namespace ControleVendas
     public partial class frmPrincipal : Form
     {
         Form2 frmListProdutos;
+
+        int[] ArrayContLbx = new int[1000];
+
+        string strLogText;
         public frmPrincipal()
         {
             InitializeComponent();
@@ -53,6 +57,10 @@ namespace ControleVendas
         private void BtnGerarVenda_Click(object sender, EventArgs e)
         {
             //Abre formRelatorioCompra
+            strLogText = "Dados da Venda \n" + "Produtos: " + lbxCompra.Items[0].ToString() + "\n" + txtSubTotal1.Text + "\n" + txtFrete1.Text + "\n";
+
+            System.IO.File.WriteAllText(@"C:\Repositorios\controle_vendas\LogVendas\Venda_"+DateTime.Now.ToString("yyyyMMddHHmmss") + ".txt", strLogText);
+            MessageBox.Show("Dados registrados\nlog_Realizado_System_form2", "Hello Word", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void FrmPrincipal_Load(object sender, EventArgs e)

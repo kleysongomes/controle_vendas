@@ -136,7 +136,7 @@
             this.lblSeparador.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblSeparador.ForeColor = System.Drawing.Color.Transparent;
             this.lblSeparador.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lblSeparador.Location = new System.Drawing.Point(18, 101);
+            this.lblSeparador.Location = new System.Drawing.Point(18, 115);
             this.lblSeparador.Name = "lblSeparador";
             this.lblSeparador.Size = new System.Drawing.Size(764, 2);
             this.lblSeparador.TabIndex = 8;
@@ -147,7 +147,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label1.Location = new System.Drawing.Point(265, 9);
+            this.label1.Location = new System.Drawing.Point(265, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(2, 81);
             this.label1.TabIndex = 9;

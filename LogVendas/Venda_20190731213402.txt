@@ -1,0 +1,2 @@
+Dados da Venda 
+Produtos: System.Windows.Forms.ListBox, Items.Count: 1, Items[0]: SOFTWARE WINDOWS 10 PRO 64BITS (OEM)

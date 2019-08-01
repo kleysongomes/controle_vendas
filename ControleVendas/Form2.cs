@@ -13,7 +13,9 @@ namespace ControleVendas
     public partial class Form2 : Form
     {
         frmPrincipal frm1;
+
         double dblSubtotal1;
+
         string[] ArrayItem = 
             {
                 "COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUX",
@@ -90,7 +92,6 @@ namespace ControleVendas
 
         }
 
-        
 
         private void LbxProdutos_SelectedIndexChanged(object sender, EventArgs e)
         {
