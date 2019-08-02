@@ -1,0 +1,19 @@
+Arquivo de log da venda 0.2.5.20190802002205
+
+Produto: HD 4TB PORTATIL USB 3.0 EXPANSION STEA4000400
+Quantidade: 1
+Valor Unitario: 520
+Produto: SOFTWARE WINDOWS SERVER 2016 ESSENTIALS 64BITS - G35-01040
+Quantidade: 2
+Valor Unitario: 950
+Produto: MOUSE PAD CORES VARIADAS AC066
+Quantidade: 3
+Valor Unitario: 23
+
+Subtotal: R$2489
+Frete: R$248,9
+Valor Total Pago: R$2737,9
+Forma de Pagamento: DINHEIRO
+
+Vendedor: KLEYSON AND DENIS
+ID do Vendedor: 001

@@ -1,0 +1,13 @@
+Arquivo de log da venda 0.2.5.20190802080928
+
+Produto: COMPUTADOR MIRANDA CELERON J3060/4GB/HD500GB/LINUX
+Quantidade: 1
+Valor Unitario: 900
+
+Subtotal: R$900
+Frete: R$90
+Valor Total Pago: R$990
+Forma de Pagamento: DINHEIRO
+
+Vendedor: KLEYSON AND DENIS
+ID do Vendedor: 001

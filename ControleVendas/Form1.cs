@@ -32,7 +32,7 @@ namespace ControleVendas
                 " Controle de Vendas - " + versao + "\n" +
                 " Desenvolvido por:\n DesbravaLink Tecnologia e Inovação\n" +
                 " Versão BetaTeste\n" +
-                " Desenvolvido como Trabalho Escolar" +
+                " Desenvolvido como Trabalho Escolar\n" +
                 " Kleyson Gomes and José Dênis";
             txtNumeroVenda.Text = versao + "."+ DateTime.Now.ToString("yyyyMMddHHmmss");
 
