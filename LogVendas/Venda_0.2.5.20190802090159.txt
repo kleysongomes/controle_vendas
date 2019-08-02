@@ -1,0 +1,16 @@
+Arquivo de log da venda 0.2.5.20190802090159
+
+Produto: HUB 4PT USB 2.0 AC042
+Quantidade: 1
+Valor Unitario: 25
+Produto: SOFTWARE WINDOWS SERVER 2016 ESSENTIALS 64BITS - G35-01040
+Quantidade: 1
+Valor Unitario: 950
+
+Subtotal: R$975
+Frete: R$97,5
+Valor Total Pago: R$1072,5
+Forma de Pagamento: 
+
+Vendedor: KLEYSON AND DENIS
+ID do Vendedor: 001

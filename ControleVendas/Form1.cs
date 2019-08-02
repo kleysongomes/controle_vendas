@@ -22,7 +22,7 @@ namespace ControleVendas
 
         double dblFreteCalc;
         double dblTotalPagar;
-        
+
         public frmPrincipal()
         {
             InitializeComponent();
@@ -54,19 +54,30 @@ namespace ControleVendas
 
         private void BtnRemoverProduto_Click(object sender, EventArgs e)
         {
+
             //Remove o produto selecionado da lbxCompra
             this.lbxQuantidade1.Items.RemoveAt(lbxCompra.SelectedIndex);
             this.lbxValor1.Items.RemoveAt(lbxCompra.SelectedIndex);
             this.lbxCompra.Items.Remove(lbxCompra.SelectedItem.ToString());
+
+            //
+            txtFrete1.Clear();
+            dblFreteCalc = (Convert.ToDouble(txtSubTotal1.Text) * 10) / 100;
+            txtFrete1.Text = Convert.ToString(dblFreteCalc);
+
+            dblTotalPagar = Convert.ToDouble(txtSubTotal1.Text) + Convert.ToDouble(txtFrete1.Text);
+            txtTotalPagar.Text = Convert.ToString(dblTotalPagar);
+            //#
         }
 
         private void BtnCalcularFrete_Click(object sender, EventArgs e)
         {
             //Exibe o valor do frete em txtfrete1 que é 10% do valor descrito em txtSubTotal1 
+            txtFrete1.Clear();
             dblFreteCalc = (Convert.ToDouble(txtSubTotal1.Text)*10)/100;
             txtFrete1.Text = Convert.ToString(dblFreteCalc);
 
-            dblTotalPagar = dblTotalPagar + Convert.ToDouble(txtSubTotal1.Text) + Convert.ToDouble(txtFrete1.Text);
+            dblTotalPagar = Convert.ToDouble(txtSubTotal1.Text) + Convert.ToDouble(txtFrete1.Text);
             txtTotalPagar.Text = Convert.ToString(dblTotalPagar);
         }
 
@@ -88,7 +99,7 @@ namespace ControleVendas
                     (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "\nValor Unitario: " + lbxValor1.Items[cont].ToString());
                 //#
 
-                //Salva na str os itens, qtds e valores unitarios para evio ao cupom de acordo com o contador
+                //Salva na str os itens, qtds e valores unitarios para envio ao cupom de acordo com o contador
                 strCumpom3 = "\n" + strCumpom3 + "\nItem: " + lbxCompra.Items[cont].ToString() + 
                     "\n Qtd: " + lbxQuantidade1.Items[cont].ToString() + "\nValor Unitario: " + lbxValor1.Items[cont].ToString();
                 //#
@@ -113,11 +124,6 @@ namespace ControleVendas
 
             frmCupomProdutos.lblCupom.Text = lblCabeçalho.Text + strLinhaCupom +  strCumpom3;
             //#
-        }
-
-        private void FrmPrincipal_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }

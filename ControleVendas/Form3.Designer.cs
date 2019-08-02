@@ -34,6 +34,7 @@
             // 
             // lblCupom
             // 
+            this.lblCupom.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold);
             this.lblCupom.Location = new System.Drawing.Point(0, 0);
             this.lblCupom.Name = "lblCupom";
             this.lblCupom.Size = new System.Drawing.Size(387, 525);
