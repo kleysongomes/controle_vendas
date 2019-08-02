@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.lbxProdutos = new System.Windows.Forms.ListBox();
             this.btnEnviarItem = new System.Windows.Forms.Button();
             this.txtQuantidade2 = new System.Windows.Forms.TextBox();
@@ -69,10 +70,11 @@
             // 
             // txtQuantidade2
             // 
+            this.txtQuantidade2.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold);
             this.txtQuantidade2.Location = new System.Drawing.Point(617, 304);
             this.txtQuantidade2.MaxLength = 50;
             this.txtQuantidade2.Name = "txtQuantidade2";
-            this.txtQuantidade2.Size = new System.Drawing.Size(62, 20);
+            this.txtQuantidade2.Size = new System.Drawing.Size(62, 23);
             this.txtQuantidade2.TabIndex = 2;
             // 
             // lblSubTotal1
@@ -97,10 +99,11 @@
             // 
             // txtQtdEstoque
             // 
+            this.txtQtdEstoque.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.txtQtdEstoque.Location = new System.Drawing.Point(625, 113);
             this.txtQtdEstoque.MaxLength = 50;
             this.txtQtdEstoque.Name = "txtQtdEstoque";
-            this.txtQtdEstoque.Size = new System.Drawing.Size(62, 20);
+            this.txtQtdEstoque.Size = new System.Drawing.Size(62, 23);
             this.txtQtdEstoque.TabIndex = 27;
             // 
             // lblValor2
@@ -115,10 +118,11 @@
             // 
             // txtValor2
             // 
+            this.txtValor2.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold);
             this.txtValor2.Location = new System.Drawing.Point(625, 150);
             this.txtValor2.MaxLength = 50;
             this.txtValor2.Name = "txtValor2";
-            this.txtValor2.Size = new System.Drawing.Size(62, 20);
+            this.txtValor2.Size = new System.Drawing.Size(62, 23);
             this.txtValor2.TabIndex = 29;
             // 
             // lblCabeçalho2
@@ -171,9 +175,10 @@
             this.Controls.Add(this.txtQuantidade2);
             this.Controls.Add(this.btnEnviarItem);
             this.Controls.Add(this.lbxProdutos);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "SisCON - Controle de Vendas - Beta.Teste";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

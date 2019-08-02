@@ -20,3 +20,4 @@ G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVenda
 G:\Meu Drive\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.frmPrincipal.resources
 C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.frmPrincipal.resources
 C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.Form2.resources
+C:\Repositorios\controle_vendas\ControleVendas\obj\Debug\ControleVendas.Form3.resources

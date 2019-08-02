@@ -13,17 +13,21 @@ namespace ControleVendas
     public partial class frmPrincipal : Form
     {
         Form2 frmListProdutos;
-
-        int[] ArrayContLbx = new int[1000];
+        Form3 frmCupom;
 
         string strLogText;
+        string versao;
+        string strCumpom3;
+        string strLinhaCupom;
+
         double dblFreteCalc;
         double dblTotalPagar;
+        
         public frmPrincipal()
         {
             InitializeComponent();
             
-            string versao = "0.1.5";
+            versao = "0.2.5";
             lblCabeçalho.Text = 
                 " Controle de Vendas - " + versao + "\n" +
                 " Desenvolvido por:\n DesbravaLink Tecnologia e Inovação\n" +
@@ -37,7 +41,11 @@ namespace ControleVendas
         {
             frmListProdutos = frmProdutos;
         }
-            private void BtnAdcionarProduto_Click(object sender, EventArgs e)
+        public frmPrincipal(Form3 frmCupomProdutos)
+        {
+            frmCupom = frmCupomProdutos;
+        }
+        private void BtnAdcionarProduto_Click(object sender, EventArgs e)
         {
             //Abre formListProdutos
             Form2 frmProdutos = new Form2(this);
@@ -65,23 +73,45 @@ namespace ControleVendas
         private void BtnGerarVenda_Click(object sender, EventArgs e)
         {
             strLogText ="\n\nSubtotal: R$" + txtSubTotal1.Text + "\nFrete: R$" + txtFrete1.Text 
-                        + "\nValot Pago: R$" + txtTotalPagar.Text + "\nForma de Pagamento: " + cbxFormadePagto.Text 
+                        + "\nValor Total Pago: R$" + txtTotalPagar.Text + "\nForma de Pagamento: " + cbxFormadePagto.Text 
                         + "\n\nVendedor: " + txtNomeVendedor.Text + "\nID do Vendedor: " + txtIDVendedor.Text;
             System.IO.File.WriteAllText
                 (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "Arquivo de log da venda " + txtNumeroVenda.Text + "\n");
             for (int cont = 0; cont < lbxCompra.Items.Count ;cont ++)
             {
+                //Escreve no txt de log os itens de acordo com o contador
                 System.IO.File.AppendAllText
                     (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "\nProduto: " + lbxCompra.Items[cont].ToString());
                 System.IO.File.AppendAllText
                     (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "\nQuantidade: " + lbxQuantidade1.Items[cont].ToString());
                 System.IO.File.AppendAllText
-                    (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "\nValor: " + lbxValor1.Items[cont].ToString());
+                    (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "\nValor Unitario: " + lbxValor1.Items[cont].ToString());
+                //#
+
+                //Salva na str os itens, qtds e valores unitarios para evio ao cupom de acordo com o contador
+                strCumpom3 = "\n" + strCumpom3 + "\nItem: " + lbxCompra.Items[cont].ToString() + 
+                    "\n Qtd: " + lbxQuantidade1.Items[cont].ToString() + "\nValor Unitario: " + lbxValor1.Items[cont].ToString();
+                //#
+
             }
             System.IO.File.AppendAllText(@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", strLogText);
             //
-            //
-            MessageBox.Show("Dados registrados\nlog_Realizado_System_form2", "Hello Word", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //Aviso de que foi gerado o log
+            MessageBox.Show("Dados registrados\nlog_Realizado_System_form2", versao , MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //#
+
+            //Declaro o obj do form 3 e inicia o form3
+            Form3 frmCupomProdutos = new Form3();
+            frmCupomProdutos.Show();
+            //#
+
+            //Passa os dados do form 1 para a textbox do form3
+            strLinhaCupom = "\n\n  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  \n";
+            strCumpom3 = strCumpom3 + strLinhaCupom + "\nForma de Pagamento:- - - - -" + cbxFormadePagto.Text  + "\n" + "Subtotal:- - - - -R$" + txtSubTotal1.Text
+                + "\n" +  "Frete:- - - - -R$" + txtFrete1.Text  + "\n" + "Valor Total Pago:- - - - -R$" + txtTotalPagar.Text;
+
+            frmCupomProdutos.lblCupom.Text = lblCabeçalho.Text + strLinhaCupom +  strCumpom3;
             //#
         }
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.lblCabeçalho = new System.Windows.Forms.Label();
             this.txtIDVendedor = new System.Windows.Forms.TextBox();
             this.lblIDVendedor = new System.Windows.Forms.Label();
@@ -76,6 +77,7 @@
             this.txtIDVendedor.Name = "txtIDVendedor";
             this.txtIDVendedor.Size = new System.Drawing.Size(50, 23);
             this.txtIDVendedor.TabIndex = 2;
+            this.txtIDVendedor.Text = "001";
             this.txtIDVendedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblIDVendedor
@@ -108,6 +110,7 @@
             this.txtNomeVendedor.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtNomeVendedor.Size = new System.Drawing.Size(300, 23);
             this.txtNomeVendedor.TabIndex = 5;
+            this.txtNomeVendedor.Text = "KLEYSON AND DENIS";
             this.txtNomeVendedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtNumeroVenda
@@ -385,10 +388,11 @@
             this.Controls.Add(this.txtIDVendedor);
             this.Controls.Add(this.lblCabeçalho);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Controle de Vendas";
+            this.Text = "SisCON - Controle de Vendas - Beta.Teste";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -398,7 +402,6 @@
         #endregion
         private System.Windows.Forms.Label lblIDVendedor;
         private System.Windows.Forms.Label lblNomeVendedor;
-        private System.Windows.Forms.TextBox txtNumeroVenda;
         private System.Windows.Forms.Label lblNumeroVenda;
         private System.Windows.Forms.Label lblSeparador;
         private System.Windows.Forms.Label label1;
@@ -422,6 +425,7 @@
         public System.Windows.Forms.TextBox txtSubTotal1;
         public System.Windows.Forms.TextBox txtIDVendedor;
         public System.Windows.Forms.TextBox txtNomeVendedor;
+        public System.Windows.Forms.TextBox txtNumeroVenda;
     }
 }
 

@@ -19,6 +19,7 @@ namespace ControleVendas
         double dblSubtotal1;
         double dblTotalPagar2;
         //#
+
         //Arrays(Item, Quantidade, Valor)
         string[] ArrayItem = 
             {
@@ -62,7 +63,6 @@ namespace ControleVendas
         public Form2()
         {
             InitializeComponent();
-            
         }
         public Form2(frmPrincipal frmTela)
         {
@@ -80,26 +80,9 @@ namespace ControleVendas
                 lbxProdutos.Items.Add(ArrayItem[linha]);
             }
             //#
-        }
-        private void BtnEnviarItem_Click(object sender, EventArgs e)
-        {
-            //Pasando o Item selecionado no Form2 para o Form1
-            frm1.lbxCompra.Items.Add(lbxProdutos.SelectedItem.ToString());
-            frm1.lbxQuantidade1.Items.Add(txtQuantidade2.Text.ToString());
-            frm1.lbxValor1.Items.Add(txtValor2.Text.ToString());
-            //#
-            //Calculo do SubTotal
-            dblSubtotal1 = dblSubtotal1 + Convert.ToDouble(txtQuantidade2.Text) * Convert.ToDouble(ArrayValor[lbxProdutos.SelectedIndex]);
-            frm1.txtSubTotal1.Text = Convert.ToString(dblSubtotal1);
-            //#
-            //Calculando o SubTotal + Frete = Valor Total a pagar e enviando para o form1
-            dblTotalPagar2 = Convert.ToDouble(frm1.txtSubTotal1.Text) + Convert.ToDouble(frm1.txtFrete1.Text);
-            frm1.txtTotalPagar.Text =  Convert.ToString(dblTotalPagar2);
-            //#
-            //Limpando os dados das Texbox coletado no inicio da instrução
-            txtQtdEstoque.Clear();
-            txtValor2.Clear();
-            txtQuantidade2.Clear();
+
+            //btnEviarItem inicia Inativo
+            btnEnviarItem.Enabled = false;
             //#
         }
         private void LbxProdutos_SelectedIndexChanged(object sender, EventArgs e)
@@ -108,6 +91,46 @@ namespace ControleVendas
             txtQtdEstoque.Text = ArrayQuantidade[lbxProdutos.SelectedIndex].ToString();
             txtValor2.Text = ArrayValor[lbxProdutos.SelectedIndex].ToString();
             //#
+
+            //btnEviarItem se torna ativo quando um item é selecionado
+            btnEnviarItem.Enabled = true;
+            //#
+        }
+        private void BtnEnviarItem_Click(object sender, EventArgs e)
+        {
+            if (ArrayQuantidade[lbxProdutos.SelectedIndex] >= Convert.ToInt32(txtQuantidade2.Text))
+            { 
+                //Pasando o Item selecionado no Form2 para o Form1
+                frm1.lbxCompra.Items.Add(lbxProdutos.SelectedItem.ToString());
+                frm1.lbxQuantidade1.Items.Add(txtQuantidade2.Text.ToString());
+                frm1.lbxValor1.Items.Add(txtValor2.Text.ToString());
+                //#
+            
+                //Calculo do SubTotal
+                dblSubtotal1 = dblSubtotal1 + Convert.ToDouble(txtQuantidade2.Text) * Convert.ToDouble(ArrayValor[lbxProdutos.SelectedIndex]);
+                frm1.txtSubTotal1.Text = Convert.ToString(dblSubtotal1);
+                //#
+            
+                //Calculando o SubTotal + Frete = Valor Total a pagar e enviando para o form1
+                dblTotalPagar2 = Convert.ToDouble(frm1.txtSubTotal1.Text) + Convert.ToDouble(frm1.txtFrete1.Text);
+                frm1.txtTotalPagar.Text =  Convert.ToString(dblTotalPagar2);
+                //#
+            
+                //Altera a quantidade no ArrayQuantidade
+                ArrayQuantidade[lbxProdutos.SelectedIndex] = Convert.ToInt32(Convert.ToDouble(txtQtdEstoque.Text) - Convert.ToDouble(txtQuantidade2.Text));
+                //#
+
+                //Limpando os dados das Texbox coletado no inicio da instrução
+                txtQtdEstoque.Clear();
+                txtValor2.Clear();
+                txtQuantidade2.Clear();
+                //#
+            }
+            else
+            {
+                MessageBox.Show("Produto em falta de Estoque", "Erro: 666", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
     }
 }
