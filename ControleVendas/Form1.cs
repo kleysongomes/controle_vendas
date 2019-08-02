@@ -27,9 +27,9 @@ namespace ControleVendas
         {
             InitializeComponent();
             
-            versao = "0.2.5";
+            versao = "0.2.8";
             lblCabeçalho.Text = 
-                " Controle de Vendas - " + versao + "\n" +
+                " Controle de Vendas - Versão " + versao + "\n" +
                 " Desenvolvido por:\n DesbravaLink Tecnologia e Inovação\n" +
                 " Versão BetaTeste\n" +
                 " Desenvolvido como Trabalho Escolar\n" +
