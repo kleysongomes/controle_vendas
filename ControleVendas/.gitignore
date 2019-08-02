@@ -3,7 +3,7 @@
 #Pastas para serem ignorados:
 LogVendas/
 ImgIco/
-.vs/
+#.vs/
 #----------------------------------------------------------------------------#
 #Arquivos para serem ignorados:
 
