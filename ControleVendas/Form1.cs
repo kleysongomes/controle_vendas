@@ -12,9 +12,12 @@ namespace ControleVendas
 {
     public partial class frmPrincipal : Form
     {
+        //declaração dos Forms
         Form2 frmListProdutos;
         Form3 frmCupom;
+        //#
 
+        //Declaração de variaves
         string strLogText;
         string versao;
         string strCumpom3;
@@ -22,12 +25,14 @@ namespace ControleVendas
 
         double dblFreteCalc;
         double dblTotalPagar;
+        //#
 
         public frmPrincipal()
         {
             InitializeComponent();
-            
-            versao = "0.2.8";
+
+           //Cabeçalho 
+            versao = "0.2.9";
             lblCabeçalho.Text = 
                 " Controle de Vendas - Versão " + versao + "\n" +
                 " Desenvolvido por:\n DesbravaLink Tecnologia e Inovação\n" +
@@ -35,21 +40,29 @@ namespace ControleVendas
                 " Desenvolvido como Trabalho Escolar\n" +
                 " Kleyson Gomes and José Dênis";
             txtNumeroVenda.Text = versao + "."+ DateTime.Now.ToString("yyyyMMddHHmmss");
+            //#
 
         }
+
+        //Recebendo  form  como parametro 
         public frmPrincipal(Form2 frmProdutos)
         {
             frmListProdutos = frmProdutos;
         }
+        //#
+
+        //Recebendo  form  como parametro 
         public frmPrincipal(Form3 frmCupomProdutos)
         {
             frmCupom = frmCupomProdutos;
         }
+        //#
         private void BtnAdcionarProduto_Click(object sender, EventArgs e)
         {
             //Abre formListProdutos
             Form2 frmProdutos = new Form2(this);
             frmProdutos.Show();
+            //#
         }
 
         private void BtnRemoverProduto_Click(object sender, EventArgs e)
@@ -79,15 +92,20 @@ namespace ControleVendas
 
             dblTotalPagar = Convert.ToDouble(txtSubTotal1.Text) + Convert.ToDouble(txtFrete1.Text);
             txtTotalPagar.Text = Convert.ToString(dblTotalPagar);
+            //#
         }
 
         private void BtnGerarVenda_Click(object sender, EventArgs e)
         {
+            //Cria um  arquivo .txt para salvar os log's das vendas
             strLogText ="\n\nSubtotal: R$" + txtSubTotal1.Text + "\nFrete: R$" + txtFrete1.Text 
                         + "\nValor Total Pago: R$" + txtTotalPagar.Text + "\nForma de Pagamento: " + cbxFormadePagto.Text 
                         + "\n\nVendedor: " + txtNomeVendedor.Text + "\nID do Vendedor: " + txtIDVendedor.Text;
             System.IO.File.WriteAllText
                 (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "Arquivo de log da venda " + txtNumeroVenda.Text + "\n");
+                //#
+
+            //For para escrever no .txt criado a cima
             for (int cont = 0; cont < lbxCompra.Items.Count ;cont ++)
             {
                 //Escreve no txt de log os itens de acordo com o contador
@@ -105,8 +123,11 @@ namespace ControleVendas
                 //#
 
             }
+            //#
+            
+            //Abre o arquivo .txt criado a cima e escreve a strLogText dentro dele. 
             System.IO.File.AppendAllText(@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", strLogText);
-            //
+            //#
 
             //Aviso de que foi gerado o log
             MessageBox.Show("Dados registrados\nlog_Realizado_System_form2", versao , MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -118,7 +139,7 @@ namespace ControleVendas
             //#
 
             //Passa os dados do form 1 para a textbox do form3
-            strLinhaCupom = "\n\n  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  \n";
+            strLinhaCupom = "\n\n  - - - - - - - - - - - - - - - - - - - - - - -  \n";
             strCumpom3 = strCumpom3 + strLinhaCupom + "\nForma de Pagamento:- - - - -" + cbxFormadePagto.Text  + "\n" + "Subtotal:- - - - -R$" + txtSubTotal1.Text
                 + "\n" +  "Frete:- - - - -R$" + txtFrete1.Text  + "\n" + "Valor Total Pago:- - - - -R$" + txtTotalPagar.Text;
 

@@ -1,0 +1,13 @@
+Arquivo de log da venda 0.2.5.20190803202547
+
+Produto: SSD 240GB SATA3 SA400S37
+Quantidade: 1
+Valor Unitario: 170
+
+Subtotal: R$170
+Frete: R$17
+Valor Total Pago: R$187
+Forma de Pagamento: DINHEIRO
+
+Vendedor: KLEYSON AND DENIS
+ID do Vendedor: 001
