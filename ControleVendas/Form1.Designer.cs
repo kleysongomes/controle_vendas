@@ -64,7 +64,7 @@
             this.lblCabeçalho.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.lblCabeçalho.Location = new System.Drawing.Point(12, 12);
             this.lblCabeçalho.Name = "lblCabeçalho";
-            this.lblCabeçalho.Size = new System.Drawing.Size(252, 82);
+            this.lblCabeçalho.Size = new System.Drawing.Size(252, 103);
             this.lblCabeçalho.TabIndex = 0;
             this.lblCabeçalho.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 

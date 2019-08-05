@@ -37,7 +37,6 @@ namespace ControleVendas
                 " Controle de Vendas - Versão " + versao + "\n" +
                 " Desenvolvido por:\n DesbravaLink Tecnologia e Inovação\n" +
                 " Versão BetaTeste\n" +
-                " Desenvolvido como Trabalho Escolar\n" +
                 " Kleyson Gomes and José Dênis";
             txtNumeroVenda.Text = versao + "."+ DateTime.Now.ToString("yyyyMMddHHmmss");
             //#
@@ -50,7 +49,7 @@ namespace ControleVendas
             frmListProdutos = frmProdutos;
         }
         //#
-
+        
         //Recebendo  form  como parametro 
         public frmPrincipal(Form3 frmCupomProdutos)
         {
@@ -101,8 +100,10 @@ namespace ControleVendas
             strLogText ="\n\nSubtotal: R$" + txtSubTotal1.Text + "\nFrete: R$" + txtFrete1.Text 
                         + "\nValor Total Pago: R$" + txtTotalPagar.Text + "\nForma de Pagamento: " + cbxFormadePagto.Text 
                         + "\n\nVendedor: " + txtNomeVendedor.Text + "\nID do Vendedor: " + txtIDVendedor.Text;
+
             System.IO.File.WriteAllText
-                (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "Arquivo de log da venda " + txtNumeroVenda.Text + "\n");
+                (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", 
+                "Arquivo de log da venda " + txtNumeroVenda.Text + "\n");
                 //#
 
             //For para escrever no .txt criado a cima
@@ -110,11 +111,16 @@ namespace ControleVendas
             {
                 //Escreve no txt de log os itens de acordo com o contador
                 System.IO.File.AppendAllText
-                    (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "\nProduto: " + lbxCompra.Items[cont].ToString());
+                    (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", 
+                    "\nProduto: " + lbxCompra.Items[cont].ToString());
+
                 System.IO.File.AppendAllText
-                    (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "\nQuantidade: " + lbxQuantidade1.Items[cont].ToString());
+                    (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", 
+                    "\nQuantidade: " + lbxQuantidade1.Items[cont].ToString());
+
                 System.IO.File.AppendAllText
-                    (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", "\nValor Unitario: " + lbxValor1.Items[cont].ToString());
+                    (@"C:\Repositorios\controle_vendas\LogVendas\Venda_" + txtNumeroVenda.Text + ".txt", 
+                    "\nValor Unitario: " + lbxValor1.Items[cont].ToString());
                 //#
 
                 //Salva na str os itens, qtds e valores unitarios para envio ao cupom de acordo com o contador

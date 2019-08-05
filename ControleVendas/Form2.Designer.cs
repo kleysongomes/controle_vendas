@@ -48,7 +48,7 @@
             this.lbxProdutos.Font = new System.Drawing.Font("Miriam Mono CLM", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.lbxProdutos.FormattingEnabled = true;
             this.lbxProdutos.ItemHeight = 14;
-            this.lbxProdutos.Location = new System.Drawing.Point(8, 113);
+            this.lbxProdutos.Location = new System.Drawing.Point(8, 140);
             this.lbxProdutos.Margin = new System.Windows.Forms.Padding(2);
             this.lbxProdutos.Name = "lbxProdutos";
             this.lbxProdutos.Size = new System.Drawing.Size(496, 270);
@@ -60,7 +60,7 @@
             this.btnEnviarItem.BackColor = System.Drawing.Color.DarkGreen;
             this.btnEnviarItem.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold);
             this.btnEnviarItem.ForeColor = System.Drawing.Color.White;
-            this.btnEnviarItem.Location = new System.Drawing.Point(531, 330);
+            this.btnEnviarItem.Location = new System.Drawing.Point(531, 357);
             this.btnEnviarItem.Name = "btnEnviarItem";
             this.btnEnviarItem.Size = new System.Drawing.Size(151, 33);
             this.btnEnviarItem.TabIndex = 1;
@@ -71,7 +71,7 @@
             // txtQuantidade2
             // 
             this.txtQuantidade2.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.txtQuantidade2.Location = new System.Drawing.Point(617, 304);
+            this.txtQuantidade2.Location = new System.Drawing.Point(617, 331);
             this.txtQuantidade2.MaxLength = 50;
             this.txtQuantidade2.Name = "txtQuantidade2";
             this.txtQuantidade2.Size = new System.Drawing.Size(62, 23);
@@ -81,7 +81,7 @@
             // 
             this.lblSubTotal1.AutoSize = true;
             this.lblSubTotal1.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.lblSubTotal1.Location = new System.Drawing.Point(532, 307);
+            this.lblSubTotal1.Location = new System.Drawing.Point(532, 334);
             this.lblSubTotal1.Name = "lblSubTotal1";
             this.lblSubTotal1.Size = new System.Drawing.Size(71, 14);
             this.lblSubTotal1.TabIndex = 26;
@@ -91,7 +91,7 @@
             // 
             this.lblQtdEstoque.AutoSize = true;
             this.lblQtdEstoque.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.lblQtdEstoque.Location = new System.Drawing.Point(523, 116);
+            this.lblQtdEstoque.Location = new System.Drawing.Point(523, 143);
             this.lblQtdEstoque.Name = "lblQtdEstoque";
             this.lblQtdEstoque.Size = new System.Drawing.Size(95, 14);
             this.lblQtdEstoque.TabIndex = 28;
@@ -100,7 +100,7 @@
             // txtQtdEstoque
             // 
             this.txtQtdEstoque.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.txtQtdEstoque.Location = new System.Drawing.Point(625, 113);
+            this.txtQtdEstoque.Location = new System.Drawing.Point(625, 140);
             this.txtQtdEstoque.MaxLength = 50;
             this.txtQtdEstoque.Name = "txtQtdEstoque";
             this.txtQtdEstoque.Size = new System.Drawing.Size(62, 23);
@@ -110,7 +110,7 @@
             // 
             this.lblValor2.AutoSize = true;
             this.lblValor2.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.lblValor2.Location = new System.Drawing.Point(524, 153);
+            this.lblValor2.Location = new System.Drawing.Point(524, 180);
             this.lblValor2.Name = "lblValor2";
             this.lblValor2.Size = new System.Drawing.Size(87, 14);
             this.lblValor2.TabIndex = 30;
@@ -119,7 +119,7 @@
             // txtValor2
             // 
             this.txtValor2.Font = new System.Drawing.Font("Miriam Mono CLM", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.txtValor2.Location = new System.Drawing.Point(625, 150);
+            this.txtValor2.Location = new System.Drawing.Point(625, 177);
             this.txtValor2.MaxLength = 50;
             this.txtValor2.Name = "txtValor2";
             this.txtValor2.Size = new System.Drawing.Size(62, 23);
@@ -132,7 +132,7 @@
             this.lblCabeçalho2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.lblCabeçalho2.Location = new System.Drawing.Point(12, 9);
             this.lblCabeçalho2.Name = "lblCabeçalho2";
-            this.lblCabeçalho2.Size = new System.Drawing.Size(252, 82);
+            this.lblCabeçalho2.Size = new System.Drawing.Size(252, 121);
             this.lblCabeçalho2.TabIndex = 31;
             this.lblCabeçalho2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -142,7 +142,7 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label1.Location = new System.Drawing.Point(287, 4);
+            this.label1.Location = new System.Drawing.Point(287, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(2, 81);
             this.label1.TabIndex = 33;
@@ -153,7 +153,7 @@
             this.lblSeparador.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblSeparador.ForeColor = System.Drawing.Color.Transparent;
             this.lblSeparador.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lblSeparador.Location = new System.Drawing.Point(8, 91);
+            this.lblSeparador.Location = new System.Drawing.Point(8, 130);
             this.lblSeparador.Name = "lblSeparador";
             this.lblSeparador.Size = new System.Drawing.Size(680, 2);
             this.lblSeparador.TabIndex = 32;
@@ -163,7 +163,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(694, 389);
+            this.ClientSize = new System.Drawing.Size(694, 421);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblSeparador);
             this.Controls.Add(this.lblCabeçalho2);
